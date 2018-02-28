@@ -1,0 +1,36 @@
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ForLoop
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btn1_Click(object sender, EventArgs e)
+        {
+            int start;
+            int end;
+
+            start = int.Parse(txtStart.Text);
+            end = int.Parse(txtEnd.Text);
+
+            /*
+            int end = 1100;
+            int num = 0;
+            */
+            int num = 0;
+
+            for (int i = start; i <= end; i++)
+            {
+                num = num + i;
+            }
+            MessageBox.Show(num.ToString());
+            
+        }
+    }
+}
