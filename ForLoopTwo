@@ -1,0 +1,42 @@
+using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace ForLoopTwo
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void btnBoi_Click(object sender, EventArgs e)
+        {
+
+            int start;
+            int end;
+
+            UInt32 num1 = 1;
+            UInt32 num2 = 0;
+                     
+            start = int.Parse(txtStart.Text);
+            end = int.Parse(txtEnd.Text);
+            //The boy starts with one
+            for (int i = start; i <= end; i++)
+            {
+                num1 = num1 * 2;
+                num2 = num2 + num1;
+            }
+
+            lblShow.Text = num2.ToString();
+            
+        }
+    }
+}
