@@ -1,0 +1,23 @@
+namespace WindowsFormsRefresh3
+{
+    public partial class Form1 : Form
+    {
+        public Form1()
+        {
+            InitializeComponent();
+        }
+
+        private void Form1_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnMessage_Click(object sender, EventArgs e)
+        {
+           //First comma after a message creates a title. The second comma ads yes and no buttons.
+           MessageBox.Show("A message", "Message", MessageBoxButtons.YesNo, MessageBoxIcon.Information);
+           
+
+        }
+    }
+}
